@@ -1,0 +1,24 @@
+{
+    "name": "xiaomlove/nexusphp-telegram-bot",
+    "description": "Telegram bot plugin for NexusPHP.",
+    "type": "library",
+    "license": "GPL-2.0-only",
+    "autoload": {
+        "psr-4": {
+            "NexusPlugin\\TelegramBot\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NexusPlugin\\TelegramBot\\ServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": ">=8.2 <8.6",
+        "irazasyed/telegram-bot-sdk": "^3.11"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
