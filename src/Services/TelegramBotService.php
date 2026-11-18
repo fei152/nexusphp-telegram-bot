@@ -63,7 +63,6 @@ class TelegramBotService
             $this->touchSeen($bot, $telegramId, (array) data_get($message, 'from', []));
 
             if ($text === '') {
-                $this->reply($bot, data_get($message, 'chat.id'), $this->trans('messages.only_text'));
                 $log->update(['handled' => true]);
                 return;
             }
